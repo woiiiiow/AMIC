@@ -1,0 +1,267 @@
+>> Filter_SG
+loading data...
+Elapsed time is 0.899809 seconds.
+smoothing fields using Savitzky-Golay filter...
+Elapsed time is 1.063845 seconds.
+
+filter_POD
+loading data...
+Elapsed time is 5.517833 seconds.
+POD and truncation...
+truncating mode: 135
+Elapsed time is 16.473148 seconds.
+
+>> filter_AMIC
+loading data...
+Elapsed time is 1.120738 seconds.
+smoothing fields using AMIC...
+iLoop = 1	correction Taylor = 0.068482	correction Div = 0
+Elapsed time is 15.482136 seconds.
+iLoop = 2	correction Taylor = 0.059768	correction Div = 0
+Elapsed time is 29.033439 seconds.
+iLoop = 3	correction Taylor = 0.054655	correction Div = 0
+Elapsed time is 42.785624 seconds.
+iLoop = 4	correction Taylor = 0.051312	correction Div = 0
+Elapsed time is 56.806674 seconds.
+iLoop = 5	correction Taylor = 0.04889	correction Div = 0
+Elapsed time is 70.689447 seconds.
+iLoop = 6	correction Taylor = 0.04699	correction Div = 0
+Elapsed time is 84.494384 seconds.
+
+epoch: 1189/1200 - time: 1266.5ms/epoch - loss: 2063.665527
+epoch: 1190/1200 - time: 1271.0ms/epoch - loss: 876.562622
+epoch: 1191/1200 - time: 1247.0ms/epoch - loss: 291.824615
+epoch: 1192/1200 - time: 1254.6ms/epoch - loss: 192.264587
+epoch: 1193/1200 - time: 1252.3ms/epoch - loss: 184.704330
+epoch: 1194/1200 - time: 1265.9ms/epoch - loss: 184.252930
+epoch: 1195/1200 - time: 1243.0ms/epoch - loss: 181.181839
+epoch: 1196/1200 - time: 1240.0ms/epoch - loss: 180.721298
+epoch: 1197/1200 - time: 1244.7ms/epoch - loss: 179.262512
+epoch: 1198/1200 - time: 1240.3ms/epoch - loss: 178.855499
+epoch: 1199/1200 - time: 1244.5ms/epoch - loss: 178.409058
+epoch: 1200/1200 - time: 1246.3ms/epoch - loss: 178.198639
+total time of filter_AE: 1999.3s
+
+>> show_err
+computing residual of the temporal derivative of N-S equations...
+residual from PIV field: 1845.1245
+residual from SG field: 490.1365
+residual from POD field: 682.0101
+residual from AE field: 1475.0313
+residual from AMIC field: 223.4567
+computing distance to PIV fields...
+distance between PIV and SG fields: 0.00081793
+distance between PIV and POD fields: 0.0022929
+distance between PIV and AE fields: 0.0018992
+distance between PIV and AMIC fields: 0.0013839
+
+>> loop_error_run
+Warning: Directory already exists. 
+> In loop_error_run (line 31) 
+loading data...
+Elapsed time is 0.696759 seconds.
+iLoop = 0
+pressure dynamic error = 1894.6
+Elapsed time is 51.553643 seconds.
+iLoop = 1	velocity correction = 0.068392
+RMS to PIV field = 0.00033372
+pressure dynamic error = 1152.7
+Elapsed time is 102.740143 seconds.
+iLoop = 2	velocity correction = 0.059472
+RMS to PIV field = 0.0005647
+pressure dynamic error = 731.2
+Elapsed time is 154.132040 seconds.
+iLoop = 3	velocity correction = 0.054256
+RMS to PIV field = 0.00073459
+pressure dynamic error = 494.68
+Elapsed time is 204.635415 seconds.
+iLoop = 4	velocity correction = 0.050862
+RMS to PIV field = 0.00086718
+pressure dynamic error = 363.63
+Elapsed time is 254.734812 seconds.
+iLoop = 5	velocity correction = 0.048414
+RMS to PIV field = 0.00097617
+pressure dynamic error = 290.68
+Elapsed time is 305.206349 seconds.
+iLoop = 6	velocity correction = 0.046503
+RMS to PIV field = 0.0010696
+pressure dynamic error = 248.35
+Elapsed time is 355.444200 seconds.
+iLoop = 7	velocity correction = 0.044927
+RMS to PIV field = 0.0011523
+pressure dynamic error = 221.79
+Elapsed time is 405.673819 seconds.
+iLoop = 8	velocity correction = 0.043579
+RMS to PIV field = 0.0012271
+pressure dynamic error = 203.53
+Elapsed time is 456.160733 seconds.
+iLoop = 9	velocity correction = 0.042399
+RMS to PIV field = 0.0012961
+pressure dynamic error = 189.92
+Elapsed time is 506.572811 seconds.
+iLoop = 10	velocity correction = 0.041346
+RMS to PIV field = 0.0013604
+pressure dynamic error = 179.14
+Elapsed time is 557.425641 seconds.
+iLoop = 11	velocity correction = 0.040394
+RMS to PIV field = 0.0014209
+pressure dynamic error = 170.24
+Elapsed time is 607.732381 seconds.
+iLoop = 12	velocity correction = 0.039525
+RMS to PIV field = 0.0014782
+pressure dynamic error = 162.66
+Elapsed time is 658.105418 seconds.
+iLoop = 13	velocity correction = 0.038726
+RMS to PIV field = 0.0015329
+pressure dynamic error = 156.06
+Elapsed time is 708.658553 seconds.
+iLoop = 14	velocity correction = 0.037985
+RMS to PIV field = 0.0015851
+pressure dynamic error = 150.21
+Elapsed time is 759.332729 seconds.
+iLoop = 15	velocity correction = 0.037294
+RMS to PIV field = 0.0016352
+pressure dynamic error = 144.97
+Elapsed time is 810.200315 seconds.
+iLoop = 16	velocity correction = 0.036646
+RMS to PIV field = 0.0016835
+pressure dynamic error = 140.23
+Elapsed time is 860.345200 seconds.
+iLoop = 17	velocity correction = 0.036037
+RMS to PIV field = 0.0017301
+pressure dynamic error = 135.88
+Elapsed time is 910.798243 seconds.
+iLoop = 18	velocity correction = 0.035462
+RMS to PIV field = 0.0017751
+pressure dynamic error = 131.89
+Elapsed time is 961.565240 seconds.
+iLoop = 19	velocity correction = 0.034917
+RMS to PIV field = 0.0018187
+pressure dynamic error = 128.18
+Elapsed time is 1012.182848 seconds.
+iLoop = 20	velocity correction = 0.034398
+RMS to PIV field = 0.0018611
+pressure dynamic error = 124.74
+Elapsed time is 1062.191069 seconds.
+iLoop = 21	velocity correction = 0.033904
+RMS to PIV field = 0.0019022
+pressure dynamic error = 121.51
+Elapsed time is 1112.129792 seconds.
+iLoop = 22	velocity correction = 0.033432
+RMS to PIV field = 0.0019422
+pressure dynamic error = 118.49
+Elapsed time is 1162.410185 seconds.
+iLoop = 23	velocity correction = 0.03298
+RMS to PIV field = 0.0019812
+pressure dynamic error = 115.65
+Elapsed time is 1213.573865 seconds.
+iLoop = 24	velocity correction = 0.032546
+RMS to PIV field = 0.0020193
+pressure dynamic error = 112.97
+Elapsed time is 1263.707525 seconds.
+iLoop = 25	velocity correction = 0.032129
+RMS to PIV field = 0.0020564
+pressure dynamic error = 110.43
+Elapsed time is 1314.038675 seconds.
+iLoop = 26	velocity correction = 0.031727
+RMS to PIV field = 0.0020927
+pressure dynamic error = 108.02
+Elapsed time is 1364.238838 seconds.
+iLoop = 27	velocity correction = 0.03134
+RMS to PIV field = 0.0021282
+pressure dynamic error = 105.74
+Elapsed time is 1414.797250 seconds.
+iLoop = 28	velocity correction = 0.030966
+RMS to PIV field = 0.002163
+pressure dynamic error = 103.57
+Elapsed time is 1464.876062 seconds.
+iLoop = 29	velocity correction = 0.030604
+RMS to PIV field = 0.002197
+pressure dynamic error = 101.51
+Elapsed time is 1515.583630 seconds.
+iLoop = 30	velocity correction = 0.030253
+RMS to PIV field = 0.0022304
+pressure dynamic error = 99.536
+Elapsed time is 1566.606331 seconds.
+iLoop = 31	velocity correction = 0.029913
+RMS to PIV field = 0.0022631
+pressure dynamic error = 97.656
+Elapsed time is 1616.885846 seconds.
+iLoop = 32	velocity correction = 0.029584
+RMS to PIV field = 0.0022952
+pressure dynamic error = 95.859
+Elapsed time is 1667.111301 seconds.
+iLoop = 33	velocity correction = 0.029263
+RMS to PIV field = 0.0023267
+pressure dynamic error = 94.14
+Elapsed time is 1717.822849 seconds.
+iLoop = 34	velocity correction = 0.028952
+RMS to PIV field = 0.0023577
+pressure dynamic error = 92.494
+Elapsed time is 1767.929490 seconds.
+iLoop = 35	velocity correction = 0.028648
+RMS to PIV field = 0.0023881
+pressure dynamic error = 90.917
+Elapsed time is 1818.122075 seconds.
+iLoop = 36	velocity correction = 0.028353
+RMS to PIV field = 0.002418
+pressure dynamic error = 89.405
+Elapsed time is 1868.558935 seconds.
+iLoop = 37	velocity correction = 0.028065
+RMS to PIV field = 0.0024475
+pressure dynamic error = 87.953
+Elapsed time is 1918.578907 seconds.
+iLoop = 38	velocity correction = 0.027784
+RMS to PIV field = 0.0024764
+pressure dynamic error = 86.558
+Elapsed time is 1969.181056 seconds.
+iLoop = 39	velocity correction = 0.027509
+RMS to PIV field = 0.002505
+pressure dynamic error = 85.218
+Elapsed time is 2019.884414 seconds.
+iLoop = 40	velocity correction = 0.027241
+RMS to PIV field = 0.002533
+pressure dynamic error = 83.929
+Elapsed time is 2070.085709 seconds.
+iLoop = 41	velocity correction = 0.026979
+RMS to PIV field = 0.0025607
+pressure dynamic error = 82.689
+Elapsed time is 2120.000840 seconds.
+iLoop = 42	velocity correction = 0.026723
+RMS to PIV field = 0.002588
+pressure dynamic error = 81.495
+Elapsed time is 2170.388978 seconds.
+iLoop = 43	velocity correction = 0.026472
+RMS to PIV field = 0.0026149
+pressure dynamic error = 80.344
+Elapsed time is 2221.854762 seconds.
+iLoop = 44	velocity correction = 0.026227
+RMS to PIV field = 0.0026414
+pressure dynamic error = 79.235
+Elapsed time is 2272.683069 seconds.
+iLoop = 45	velocity correction = 0.025986
+RMS to PIV field = 0.0026675
+pressure dynamic error = 78.165
+Elapsed time is 2323.464876 seconds.
+iLoop = 46	velocity correction = 0.02575
+RMS to PIV field = 0.0026933
+pressure dynamic error = 77.133
+Elapsed time is 2373.861838 seconds.
+iLoop = 47	velocity correction = 0.025519
+RMS to PIV field = 0.0027187
+pressure dynamic error = 76.137
+Elapsed time is 2423.827048 seconds.
+iLoop = 48	velocity correction = 0.025293
+RMS to PIV field = 0.0027438
+pressure dynamic error = 75.175
+Elapsed time is 2473.920847 seconds.
+iLoop = 49	velocity correction = 0.02507
+RMS to PIV field = 0.0027686
+pressure dynamic error = 74.246
+Elapsed time is 2524.105844 seconds.
+iLoop = 50	velocity correction = 0.024852
+RMS to PIV field = 0.0027931
+pressure dynamic error = 73.347
+Elapsed time is 2574.766010 seconds.
+IdleTimeout has been reached.
+Parallel pool using the 'Processes' profile is shutting down.
