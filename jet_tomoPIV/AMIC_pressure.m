@@ -1,24 +1,26 @@
+% woii EAP UC3M junwei.chen@uc3m.es
+% 20241017
 % setting of loading and saving data
 RootFolder = './';
-SubSet = 'JetAR1_02';
-PreFix = '/GPU_vec';
-SufFix = '.dat';
+SubSet     = 'JetAR1_02';
+PreFix     = '/GPU_vec';
+SufFix     = '.dat';
 SaveFolder = './';
-AFrame = 7:4:5995;
+AFrame     = 7:4:5995;
 % geometries
-dt = 1/500;                    % original set 2000 Hz
+dt         = 1/500;             % original set 2000 Hz
 % setting of AMIC
-Lambda = [0.15 0.15];          % coefficient of AMIC smoothing
-NLoop = 64;                    % maximum number of loop
-ThVCI = 0.9;                   % iteration stops when the velocity
-                               % correction index exceeds the threshold
-                               % default: 0.9
+Lambda     = [0.15 0.15];       % coefficient of AMIC smoothing
+NLoop      = 64;                % maximum number of loop
+ThVCI      = 0.9;               % iteration stops when the velocity
+                                % correction index exceeds the threshold
+                                % default: 0.9
 % setting of pressure computation
-FIncre = 1;                    % multiples of time increment for pressure
-Nu = 1e-6;                     % kinetic viscosity coefficient of water
-Rho = 1e3;                     % density of water
-dev = 'GPU';                   % 'GPU'/'gpu': use GPU to calculate pressure
-ParNo = 4;                     % number of parallel pool
+FIncre     = 1;                 % multiples of time increment for pressure
+Nu         = 1e-6;              % kinetic viscosity coefficient of water
+Rho        = 1e3;               % density of water
+dev        = 'GPU';             % 'GPU'/'gpu': use GPU to calculate pressure
+ParNo      = 4;                 % number of parallel pool
 
 disp(['save to file "',SaveFolder,SubSet,'_conAMIC.mat"']);
 tic
