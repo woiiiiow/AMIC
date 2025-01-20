@@ -1,17 +1,32 @@
-This is the code to filter the tomographic PIV (Particle Image Velocimetry) field of free jet at Re = 2800 [1] using AMIC and compute the pressure field.
-The main program is on AMIC_pressure.m
-MATLAB script
+===========================================================================
+        Algorithm: Advection-based Multiframe Iterative Correction (AMIC)
+           Author: CHEN Junwei, Stefano DISCETTI, Marco RAIOLA
+       Laboratory: EAP of UC3M
+         Platform: MATLAB & PYTHON
+             Date: 20th January 2025
+          Version: 2.0.0
+          Contact: junwei.chen@uc3m.es
+===========================================================================
 
-before running:
-1. typing in the parameters [line 4-23];
-2. adjusting to the data storage structure of your dataset [line 28-55];
-3. confirming the variables to save and the file name [line 202-205].
+DESCRIPTION
+The Advection-based Multiframe Iterative Correction (AMIC) is a space-time filter based on advection funtion to filter the (Particle Image Velocimetry) PIV fields. Here is an example on 3D PIV (tomographic PIV) field of the wake of free jet at Re = 2800[1].
 
-testing platform:
+PLATFORM
+The codes are tested on:
 AMD Ryzen 9 5950X/128 GB DDR4/NVIDIA GeForce RTX 4090
 Debian 12/MATLAB R2023b
+For 1498 frames, it takes 2544 s to filter the velocity field, and 43262 s to finish the whole program.
 
-for 1498 frames, it takes 2544 s to filter the velocity field, and 43262 s to finish the whole program.
+RUNNING
+1. changing the parameters to that of your case [line 4-23];
+2. adjusting the data storage structure to fit your dataset [line 28-55];
+3. confirming the variables to save [line 202-205].
+4. running the code
 
-Reference
+FILES
+AMIC_pressure.m                              MATLAB script to process the PIV field using AMIC and then compute pressure field
+show_data.m                                  MATLAB script to observe the statistics of velocity field
+show_pressure.m                              MATLAB script to observe the pressure field
+
+REFERENCE
 1. He, C., Zeng, X., Wang, P., Wen, X., Liu, Y., 2024. Four-dimensional variational data assimilation of a turbulent jet for super-temporal-resolution reconstruction. Journal of Fluid Mechanics 978, A14.
