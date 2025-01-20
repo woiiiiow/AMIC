@@ -2,19 +2,19 @@
 % 20241017
 % computing the pressure fields from unprocessed and processed PIV fields
 
-SourceFolder = '../../Experiment_wing3/OUT_TRPIV/';
-OutputFile = 'Pressure.mat';
+SourceFolder    = '../../Experiment_wing3/OUT_TRPIV/';
+OutputFile      = 'Pressure.mat';
 
-ROI = [41 110 41 150];         % subdomain of PIV field
-                               % [first-last row, first-last column]
-Mm_per_px_ratio = 0.1197;      % spatial resolution of photos
-Sample_rate = 30;              % sample rate of PIV
-Vector_Spacing = 10;           % vector per pixel in PIV
-Nu = 1e-6;                     % kinetic viscosity coefficient of water
-Rho = 1e3;                     % density of water
+ROI = [41 110 41 150];          % subdomain of PIV field
+                                % [first-last row, first-last column]
+Mm_per_px_ratio = 0.1197;       % spatial resolution of photos
+Sample_rate     = 30;           % sample rate of PIV
+Vector_Spacing  = 10;           % vector per pixel in PIV
+Nu              = 1e-6;         % kinetic viscosity coefficient of water
+Rho             = 1e3;          % density of water
 
-AFrame = 11:530;               % frames to be processed
-AFrame_P = 21:260;             % frames to calculate pressure
+AFrame          = 11:530;       % frames to be processed
+AFrame_P        = 21:260;       % frames to calculate pressure
 
 load([SourceFolder, 'Grid_Wing.mat'], 'X','Y');
 % entire domain coordinates
