@@ -1,0 +1,33 @@
+===========================================================================
+        Algorithm: Advection-based Multiframe Iterative Correction (AMIC)
+           Author: CHEN Junwei, Stefano DISCETTI, Marco RAIOLA
+       Laboratory: EAP of UC3M
+         Platform: MATLAB & PYTHON
+             Date: 20th January 2025
+          Version: 2.0.0
+          Contact: junwei.chen@uc3m.es
+===========================================================================
+
+DESCRIPTION
+The Advection-based Multiframe Iterative Correction (AMIC) is a space-time filter based on advection funtion to filter the (Particle Image Velocimetry) PIV fields. Here is an example on 2D PIV field.
+
+PLATFORM
+The codes are tested on:
+AMD Ryzen 9 5950X/128 GB DDR4/NVIDIA GeForce RTX 4090
+Debian 12/MATLAB R2023b
+
+DATABASE
+
+RUNNING
+
+FILES
+Grid_Wing.mat                                grid information of the PIV field
+P_calculation.m                              MATLAB script to compute the pressure field
+filter_AE.py                                 python code to process the PIV field using blind denoising autoencoder
+filter_AMIC.m                                MATLAB script to process the velocity field using AMIC
+filter_POD.m                                 MATLAB script to do POD (Proper Orthogonal Decomposition) truncation on velocity field
+Filter_SG.m                                  MATLAB script filter the the velocity field using 3D Savitzky-Golay filter
+log                                          a file logging the outputs of program
+loop_error_run.m                             MATLAB script to inspect the error over AMIC iterations
+show_pressure.m                              MATLAB script to observe the pressure field
+show_velocity.m                              MATLAB script to observe the velocity field
