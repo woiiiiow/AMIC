@@ -1,24 +1,27 @@
-SourceFolder = '../../Experiment_wing3/OUT_TRPIV/';
-OutputFile = 'V_AMIC.mat';
-ROI = [41 110 41 150];         % subdomain of PIV field
-                               % [first-last row, first-last column]
-Mm_per_px_ratio = 0.1197;      % spatial resolution of photos
-Sample_rate = 30;              % sample rate of PIV
-Vector_Spacing = 10;           % vector per pixel in PIV
+% Woii, junwei.chen@uc3m.es, EAP, UC3M
+% AMIC to the 2D PIV dataset of airfoil's wake
 
-AFrame = 11:530;               % frames to be processed
-NLoop = 100;                   % Total loops of AMIC
-Lambda = [0.1 0.05];           % iteration coefficients
-ThVCI = 0.9;                   % iteration stops when the velocity
-                               % correction index exceeds the threshold
-                               % default: 0.9
-InitLoopDiv = 100;             % first loop to start divergence-free filter
-RateDiv = 0.4;                 % initial rate of divergence-free filter
-NItDiv = 1;                    % loops of divergence-free filter everytime
+SourceFolder    = '../../Experiment_wing3/OUT_TRPIV/';
+OutputFile      = 'V_AMIC.mat';
+ROI = [41 110 41 150];          % subdomain of PIV field
+                                % [first-last row, first-last column]
+Mm_per_px_ratio = 0.1197;       % spatial resolution of photos
+Sample_rate     = 30;           % sample rate of PIV
+Vector_Spacing  = 10;           % vector per pixel in PIV
+
+AFrame          = 11:530;       % frames to be processed
+NLoop           = 100;          % Total loops of AMIC
+Lambda          = [0.1 0.05];   % iteration coefficients
+ThVCI           = 0.9;          % iteration stops when the velocity
+                                % correction index exceeds the threshold
+                                % default: 0.9
+InitLoopDiv     = 100;          % first loop to start divergence-free filter
+RateDiv         = 0.4;          % initial rate of divergence-free filter
+NItDiv          = 1;            % loops of divergence-free filter everytime
 
 load([SourceFolder, 'Grid_Wing.mat'], 'X','Y');
 % entire domain coordinates
-X_etr = X;                     Y_etr = Y;
+X_etr = X;                      Y_etr = Y;
 dt = 1/Sample_rate;
 tic
 
