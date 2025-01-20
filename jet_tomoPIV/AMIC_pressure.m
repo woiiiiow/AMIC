@@ -5,7 +5,6 @@ PreFix = '/GPU_vec';
 SufFix = '.dat';
 SaveFolder = './';
 AFrame = 7:4:5995;
-% AFrame = 5:4:595;
 % geometries
 dt = 1/500;                    % original set 2000 Hz
 % setting of AMIC
