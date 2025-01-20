@@ -6,7 +6,7 @@ SubSet     = 'JetAR1_02';
 PreFix     = '/GPU_vec';
 SufFix     = '.dat';
 SaveFolder = './';
-AFrame     = 7:4:5995;
+AFrame     = 7:4:5995;          % the frames to process (both AMIC and pressure computation)
 % geometries
 dt         = 1/500;             % original set 2000 Hz
 % setting of AMIC
