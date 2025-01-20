@@ -9,7 +9,7 @@
 ===========================================================================
 
 DESCRIPTION
-The Advection-based Multiframe Iterative Correction (AMIC) is a space-time filter based on advection funtion to filter the (Particle Image Velocimetry) PIV fields. Here is an example on 2D PIV field.
+The Advection-based Multiframe Iterative Correction (AMIC) is a space-time filter based on advection funtion to filter the (Particle Image Velocimetry) PIV fields. Here is an example on 2D PIV field of the wake of a wing model.
 
 PLATFORM
 The codes are tested on:
