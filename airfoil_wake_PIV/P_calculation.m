@@ -1,3 +1,6 @@
+% woii EAP UC3M junwei.chen@uc3m.es
+% 20241017
+
 SourceFolder = '../../Experiment_wing3/OUT_TRPIV/';
 OutputFile = 'Pressure.mat';
 
