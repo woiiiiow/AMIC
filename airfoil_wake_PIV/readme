@@ -26,7 +26,7 @@ P_calculation.m                              MATLAB script to compute the pressu
 filter_AE.py                                 python code to process the PIV field using blind denoising autoencoder
 filter_AMIC.m                                MATLAB script to process the velocity field using AMIC
 filter_POD.m                                 MATLAB script to do POD (Proper Orthogonal Decomposition) truncation on velocity field
-Filter_SG.m                                  MATLAB script filter the the velocity field using 3D Savitzky-Golay filter
+filter_SG.m                                  MATLAB script filter the the velocity field using 3D Savitzky-Golay filter
 log                                          a file logging the outputs of program
 loop_error_run.m                             MATLAB script to inspect the error over AMIC iterations
 show_pressure.m                              MATLAB script to observe the pressure field
