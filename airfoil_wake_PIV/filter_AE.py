@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 
 # CHEN Junwei, EAP LAP, UC3M, junwei.chen@uc3m.es
+# using autoencoder to denoise the PIV fields
 # 240510 v4 reduce model to prevent GPU RAM exploding
 # 240513 v5 refine
 # 240513 v6 transplant to google colab
