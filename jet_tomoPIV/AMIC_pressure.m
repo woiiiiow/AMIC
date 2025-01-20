@@ -40,7 +40,7 @@ dz = (Z(1,1,2) - Z(1)).*1e-3;
 U_array = zeros(numel(X), length(AFrame));
 V_array = zeros(numel(X), length(AFrame));
 W_array = zeros(numel(X), length(AFrame));
-Enabled = false(numel(X), length(AFrame));
+Enabled = false(numel(X), length(AFrame)); % enabled vectors
 for iFrame = 1:length(AFrame)
     A = importdata([RootFolder,SubSet,PreFix,...
         num2str(AFrame(iFrame),'%05u'),SufFix]);
