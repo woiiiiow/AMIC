@@ -1,5 +1,6 @@
 % woii EAP UC3M junwei.chen@uc3m.es
 % 20241017
+% computing the pressure fields from unprocessed and processed PIV fields
 
 SourceFolder = '../../Experiment_wing3/OUT_TRPIV/';
 OutputFile = 'Pressure.mat';
@@ -273,9 +274,6 @@ for iFrame = 2:length(AFrame_P)
 end
 save(OutputFile, 'P_AMIC', '-append');
 toc
-
-
-
 
 %% functions
 function D = LaplaceOperation2(f, dx, dy)
