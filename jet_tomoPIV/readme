@@ -1,1 +1,6 @@
-This is the code to filter the tomographic PIV (Particle Image Velocimetry) field using AMIC.
+This is the code to filter the tomographic PIV (Particle Image Velocimetry) field of free jet at Re = 2800 [1] using AMIC.
+
+
+
+Reference
+1. He, C., Zeng, X., Wang, P., Wen, X., Liu, Y., 2024. Four-dimensional variational data assimilation of a turbulent jet for super-temporal-resolution reconstruction. Journal of Fluid Mechanics 978, A14.
