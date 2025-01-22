@@ -1,0 +1,173 @@
+>> step_error_run
+Starting parallel pool (parpool) using the 'local' profile ...
+Connected to the parallel pool (number of workers: 64).
+loading data...
+Elapsed time is 34.259550 seconds.
+processing...
+iLoop = 0	velocity error = 0.01788	pressure error = 0.04702	velocity distance = 0
+Elapsed time is 196.364103 seconds.
+iLoop = 1	velocity correction = 0.35218	velocity error = 0.01078	pressure error = 0.0224	velocity distance = 0.0092575
+Elapsed time is 289.977559 seconds.
+iLoop = 2	velocity correction = 0.17869	velocity error = 0.008605	pressure error = 0.01417	velocity distance = 0.012785
+Elapsed time is 381.663668 seconds.
+iLoop = 3	velocity correction = 0.13011	velocity error = 0.007735	pressure error = 0.01064	velocity distance = 0.014364
+Elapsed time is 476.954214 seconds.
+iLoop = 4	velocity correction = 0.11352	velocity error = 0.007308	pressure error = 0.008838	velocity distance = 0.0152
+Elapsed time is 574.419834 seconds.
+iLoop = 5	velocity correction = 0.10577	velocity error = 0.007081	pressure error = 0.007811	velocity distance = 0.015716
+Elapsed time is 667.811726 seconds.
+iLoop = 6	velocity correction = 0.10119	velocity error = 0.006967	pressure error = 0.007216	velocity distance = 0.016077
+Elapsed time is 760.549545 seconds.
+iLoop = 7	velocity correction = 0.098069	velocity error = 0.006926	pressure error = 0.00688	velocity distance = 0.016356
+Elapsed time is 854.547949 seconds.
+iLoop = 8	velocity correction = 0.095737	velocity error = 0.006935	pressure error = 0.006742	velocity distance = 0.016586
+Elapsed time is 947.668245 seconds.
+iLoop = 9	velocity correction = 0.093893	velocity error = 0.006981	pressure error = 0.006723	velocity distance = 0.016785
+Elapsed time is 1041.935974 seconds.
+iLoop = 10	velocity correction = 0.092371	velocity error = 0.007054	pressure error = 0.006794	velocity distance = 0.016963
+Elapsed time is 1133.898033 seconds.
+iLoop = 11	velocity correction = 0.091078	velocity error = 0.007148	pressure error = 0.006932	velocity distance = 0.017127
+Elapsed time is 1230.281124 seconds.
+iLoop = 12	velocity correction = 0.089952	velocity error = 0.00725	pressure error = 0.00711	velocity distance = 0.017281
+Elapsed time is 1322.653933 seconds.
+iLoop = 13	velocity correction = 0.088955	velocity error = 0.007382	pressure error = 0.007335	velocity distance = 0.017426
+Elapsed time is 1412.874583 seconds.
+iLoop = 14	velocity correction = 0.08806	velocity error = 0.007516	pressure error = 0.007578	velocity distance = 0.017565
+Elapsed time is 1506.129962 seconds.
+iLoop = 15	velocity correction = 0.087245	velocity error = 0.007658	pressure error = 0.00783	velocity distance = 0.017698
+Elapsed time is 1597.712810 seconds.
+iLoop = 16	velocity correction = 0.086496	velocity error = 0.007806	pressure error = 0.008110	velocity distance = 0.017828
+Elapsed time is 1692.344498 seconds.
+iLoop = 17	velocity correction = 0.085803	velocity error = 0.007959	pressure error = 0.008390	velocity distance = 0.017955
+Elapsed time is 1782.805738 seconds.
+iLoop = 18	velocity correction = 0.085156	velocity error = 0.008117	pressure error = 0.008674	velocity distance = 0.018078
+Elapsed time is 1873.643317 seconds.
+iLoop = 19	velocity correction = 0.084549	velocity error = 0.008278	pressure error = 0.008960	velocity distance = 0.0182
+Elapsed time is 1970.156182 seconds.
+iLoop = 20	velocity correction = 0.083976	velocity error = 0.008441	pressure error = 0.00924	velocity distance = 0.018319
+Elapsed time is 2061.071464 seconds.
+iLoop = 21	velocity correction = 0.083433	velocity error = 0.00860	pressure error = 0.009534	velocity distance = 0.018437
+Elapsed time is 2151.815604 seconds.
+iLoop = 22	velocity correction = 0.082916	velocity error = 0.008773	pressure error = 0.009819	velocity distance = 0.018553
+Elapsed time is 2243.971018 seconds.
+iLoop = 23	velocity correction = 0.082423	velocity error = 0.008941	pressure error = 0.01010	velocity distance = 0.018669
+Elapsed time is 2334.329226 seconds.
+iLoop = 24	velocity correction = 0.08195	velocity error = 0.009110	pressure error = 0.01038	velocity distance = 0.018783
+Elapsed time is 2429.618692 seconds.
+iLoop = 25	velocity correction = 0.081496	velocity error = 0.009279	pressure error = 0.01065	velocity distance = 0.018896
+Elapsed time is 2528.143433 seconds.
+iLoop = 26	velocity correction = 0.081058	velocity error = 0.00944	pressure error = 0.01093	velocity distance = 0.019008
+Elapsed time is 2624.695547 seconds.
+iLoop = 27	velocity correction = 0.080636	velocity error = 0.009618	pressure error = 0.011	velocity distance = 0.01912
+Elapsed time is 2716.056622 seconds.
+iLoop = 28	velocity correction = 0.080227	velocity error = 0.009787	pressure error = 0.01146	velocity distance = 0.019231
+Elapsed time is 2808.585552 seconds.
+iLoop = 29	velocity correction = 0.079831	velocity error = 0.009956	pressure error = 0.01172	velocity distance = 0.019341
+Elapsed time is 2900.827656 seconds.
+iLoop = 30	velocity correction = 0.079447	velocity error = 0.01012	pressure error = 0.01198	velocity distance = 0.019451
+Elapsed time is 2993.310963 seconds.
+iLoop = 31	velocity correction = 0.079073	velocity error = 0.01029	pressure error = 0.01223	velocity distance = 0.01956
+Elapsed time is 3089.024439 seconds.
+iLoop = 32	velocity correction = 0.078709	velocity error = 0.01046	pressure error = 0.01248	velocity distance = 0.019668
+Elapsed time is 3181.006228 seconds.
+iLoop = 33	velocity correction = 0.078355	velocity error = 0.01062	pressure error = 0.01272	velocity distance = 0.019777
+Elapsed time is 3278.904860 seconds.
+iLoop = 34	velocity correction = 0.078009	velocity error = 0.01079	pressure error = 0.01296	velocity distance = 0.019884
+Elapsed time is 3373.835117 seconds.
+iLoop = 35	velocity correction = 0.077671	velocity error = 0.01096	pressure error = 0.01320	velocity distance = 0.019992
+Elapsed time is 3466.159763 seconds.
+iLoop = 36	velocity correction = 0.07734	velocity error = 0.01112	pressure error = 0.01343	velocity distance = 0.020099
+Elapsed time is 3562.429958 seconds.
+iLoop = 37	velocity correction = 0.077017	velocity error = 0.0112	pressure error = 0.0136	velocity distance = 0.020206
+Elapsed time is 3657.064757 seconds.
+iLoop = 38	velocity correction = 0.0767	velocity error = 0.01145	pressure error = 0.01388	velocity distance = 0.020312
+Elapsed time is 3754.232382 seconds.
+iLoop = 39	velocity correction = 0.076389	velocity error = 0.01161	pressure error = 0.01410	velocity distance = 0.020418
+Elapsed time is 3850.208779 seconds.
+iLoop = 40	velocity correction = 0.076084	velocity error = 0.01177	pressure error = 0.01431	velocity distance = 0.020524
+Elapsed time is 3946.117153 seconds.
+iLoop = 41	velocity correction = 0.075785	velocity error = 0.01193	pressure error = 0.01452	velocity distance = 0.020629
+Elapsed time is 4039.378665 seconds.
+iLoop = 42	velocity correction = 0.075491	velocity error = 0.01209	pressure error = 0.01473	velocity distance = 0.020734
+Elapsed time is 4131.227924 seconds.
+iLoop = 43	velocity correction = 0.075201	velocity error = 0.01225	pressure error = 0.01493	velocity distance = 0.020839
+Elapsed time is 4225.887531 seconds.
+iLoop = 44	velocity correction = 0.074917	velocity error = 0.01241	pressure error = 0.01513	velocity distance = 0.020943
+Elapsed time is 4320.659221 seconds.
+iLoop = 45	velocity correction = 0.074637	velocity error = 0.0125	pressure error = 0.01533	velocity distance = 0.021048
+Elapsed time is 4413.547327 seconds.
+iLoop = 46	velocity correction = 0.074361	velocity error = 0.01272	pressure error = 0.01552	velocity distance = 0.021152
+Elapsed time is 4509.964582 seconds.
+iLoop = 47	velocity correction = 0.07409	velocity error = 0.01288	pressure error = 0.01571	velocity distance = 0.021255
+Elapsed time is 4603.955033 seconds.
+iLoop = 48	velocity correction = 0.073822	velocity error = 0.01303	pressure error = 0.01590	velocity distance = 0.021358
+Elapsed time is 4700.064950 seconds.
+iLoop = 49	velocity correction = 0.073559	velocity error = 0.01318	pressure error = 0.01608	velocity distance = 0.021461
+Elapsed time is 4793.186133 seconds.
+iLoop = 50	velocity correction = 0.073299	velocity error = 0.0133	pressure error = 0.01626	velocity distance = 0.021564
+Elapsed time is 4886.734995 seconds.
+IdleTimeout has been reached.
+Parallel pool using the 'local' profile is shutting down.
+
+>> filter_AMIC
+loading data...
+Elapsed time is 0.704213 seconds.
+smoothing fields using AMIC...
+iLoop = 1	correction Taylor = 0.04678
+Elapsed time is 20.582523 seconds.
+iLoop = 2	correction Taylor = 0.023692
+Elapsed time is 40.583976 seconds.
+iLoop = 3	correction Taylor = 0.01717	correction index = 0.44773
+Elapsed time is 60.792700 seconds.
+iLoop = 4	correction Taylor = 0.014915	correction index = 0.52915
+Elapsed time is 80.609113 seconds.
+iLoop = 5	correction Taylor = 0.013854	correction index = 0.61713
+Elapsed time is 100.183866 seconds.
+iLoop = 6	correction Taylor = 0.013226	correction index = 0.70064
+Elapsed time is 119.977147 seconds.
+iLoop = 7	correction Taylor = 0.012797	correction index = 0.77095
+Elapsed time is 140.012016 seconds.
+iLoop = 8	correction Taylor = 0.012477	correction index = 0.82565
+Elapsed time is 159.866662 seconds.
+iLoop = 9	correction Taylor = 0.012224	correction index = 0.86643
+Elapsed time is 180.273407 seconds.
+iLoop = 10	correction Taylor = 0.012017	correction index = 0.89615
+Elapsed time is 200.204288 seconds.
+iLoop = 11	correction Taylor = 0.01184	correction index = 0.91823
+Elapsed time is 220.153448 seconds.
+
+>> filter_SG
+smoothing fields using Savitzky-Golay filter...
+Elapsed time is 0.837685 seconds.
+
+>> filter_POD
+loading and processing flow field data...
+Elapsed time is 4427.742670 seconds.
+POD and truncation...
+truncating mode: 81
+Elapsed time is 4436.940916 seconds.
+
+>> P_calculation
+computing reference pressure...
+Starting parallel pool (parpool) using the 'local' profile ...
+Connected to the parallel pool (number of workers: 24).
+Elapsed time is 144.640924 seconds.
+computing pressure from noisy field...
+Elapsed time is 270.423895 seconds.
+computing pressure from Savitzky-Golay filtered field...
+Elapsed time is 396.754572 seconds.
+computing pressure from POD truncated field...
+Elapsed time is 523.709640 seconds.
+computing pressure from AMIC processed field...
+Elapsed time is 650.868494 seconds.
+std error of noisy field: 0.047022
+std error of SG filtered field: 0.029024
+std error of POD truncated field: 0.025211
+std error of AMIC corrected field: 0.0069322
+IdleTimeout has been reached.
+Parallel pool using the 'local' profile is shutting down.
+
+cosine similarity of noisy field: 0.31507
+cosine similarity of SG filtered field: 0.45873
+cosine similarity of POD truncated field: 0.46584
+cosine similarity of AMIC corrected field: 0.90536
