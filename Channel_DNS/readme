@@ -50,7 +50,7 @@ Fields_testing/                                 time resolved flow fields
 Fields/                                         non time resolved flow fields to enrich POD spectrum (only for POD truncation)
 GWN/                                            folder of the data with Gaussian white noise
 CGWN/                                           folder of the data with convolution of Gaussian white noise
-in each folder there is:
+in each folder of {GWN, CGWN} there is:
     Pressure.mat                                saving pressure computation result
     V_NOISE.mat                                 saving velocity field superimposed with noise
     V_SG.mat                                    saving velocity field after Savitzky-Golay filter
