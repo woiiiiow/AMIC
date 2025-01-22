@@ -27,9 +27,9 @@ RUNNING
 change the file path to suit your environment and run
 
 FILES IN GITHUB
-airfoilLES_README.pdf						    copy of the readme of original database
-gaussian_white_noise/						    folder of the code with Gaussian white noise
-convolution_gaussian_white_noise/				folder of the code with convolution of Gaussian white noise
+airfoilLES_README.pdf                           copy of the readme of original database
+gaussian_white_noise/                           folder of the code with Gaussian white noise
+convolution_gaussian_white_noise/               folder of the code with convolution of Gaussian white noise
 in each folder there is:
     Noisify.m                                   MATLAB script to superpose noise into velocity field
     filter_SG.m                                 MATLAB script to filter the velocity field with Savitzky-Golay filter
@@ -39,11 +39,11 @@ in each folder there is:
     log              	                        a file logging the outputs of program
 
 FILES IN ZENODO
-airfoilLES_midspan/     	                    folder containing flow field data
+airfoilLES_midspan/                             folder containing flow field data
 airfoilLES_gird.h5          	                file saving grid information
-airfoilLES_parameters.h5        	            file saving flow and data information
-GWN/											folder of the data with Gaussian white noise
-CGWN/											folder of the data with convolution of Gaussian white noise
+airfoilLES_parameters.h5                        file saving flow and data information
+GWN/                                            folder of the data with Gaussian white noise
+CGWN/                                           folder of the data with convolution of Gaussian white noise
 
 REFERENCE
 A. Towne, S. Dawson, G. A. Brès, A. Lozano-Durán, T. Saxton-Fox, A. Parthasarthy, A. R. Jones, H. Biler, C.-A. Yeh, H. Patel, and K. Taira. A database for reduced-complexity modeling of fluid flows. AIAA Journal, 61:2867–2892, 2023.
