@@ -1,0 +1,52 @@
+AMICFilter
+smoothing fields using physics-based multifold iterative method...
+iLoop = 1	correction advection = 0.032123	correction div = 0
+Elapsed time is 21.060825 seconds.
+iLoop = 2	correction advection = 0.021631	correction div = 0
+Elapsed time is 38.173351 seconds.
+iLoop = 3	correction advection = 0.017712	correction div = 0	correction index = 0.59573
+Elapsed time is 55.174858 seconds.
+iLoop = 4	correction advection = 0.015862	correction div = 0	correction index = 0.69403
+Elapsed time is 71.946199 seconds.
+iLoop = 5	correction advection = 0.014724	correction div = 0	correction index = 0.78475
+Elapsed time is 88.921524 seconds.
+iLoop = 6	correction advection = 0.013891	correction div = 0	correction index = 0.85364
+Elapsed time is 105.707742 seconds.
+iLoop = 7	correction advection = 0.01322	correction div = 0	correction index = 0.89852
+Elapsed time is 122.354044 seconds.
+iLoop = 8	correction advection = 0.012654	correction div = 0	correction index = 0.92566
+Elapsed time is 139.509012 seconds.
+P_calculation
+Starting parallel pool (parpool) using the 'Processes' profile ...
+Connected to parallel pool with 8 workers.
+copying reference pressure...
+Elapsed time is 2.403701 seconds.
+calculating pressure from field with noise...
+Elapsed time is 885.403238 seconds.
+calculating pressure from Savitzky-Golay filtered field...
+Elapsed time is 1699.757991 seconds.
+calculating pressure from POD filtered field...
+Elapsed time is 2545.891836 seconds.
+calculating pressure from AMIC filtered field...
+Elapsed time is 3163.699982 seconds.
+IdleTimeout has been reached.
+Parallel pool using the 'Processes' profile is shutting down.
+
+>> showvelocity
+velocity error from field with noise: 0.0099695
+velocity error from SG filtered field: 0.012418
+velocity error from POD filtered field: 0.018163
+velocity error from AMIC filtered field: 0.0089827
+velocity similarity from field with noise to reference: 0.99986
+velocity similarity from SG filtered to reference: 0.99978
+velocity similarity from POD filtered to reference: 0.99953
+velocity similarity from AMIC filtered to reference: 0.99988
+>> showpressure
+pressure error from field with noise: 0.045005
+pressure error from SG filtered field: 0.024559
+pressure error from POD filtered field: 0.028761
+pressure error from AMIC filtered field: 0.0073568
+pressure similarity from field with noise to reference: 0.16237
+pressure similarity from SG filtered field to reference: 0.26739
+pressure similarity from POD filtered field to reference: 0.23572
+pressure similarity from AMIC filtered field to reference: 0.6887
