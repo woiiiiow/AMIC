@@ -46,6 +46,8 @@ in each folder there is:
 FILES IN ZENODO
 mat2h5.m                                        MATLAB script to convert the format from *.mat to *.h5
 h52mat.m                                        MATLAB script to convert the format from *.h5 to *.mat
+Fields_testing/                                 time resolved flow fields
+Fields/                                         non time resolved flow fields to enrich POD spectrum (only for POD truncation)
 GWN/                                            folder of the data with Gaussian white noise
 CGWN/                                           folder of the data with convolution of Gaussian white noise
 in each folder there is:
