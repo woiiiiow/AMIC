@@ -19,3 +19,6 @@ jet_tomoPIV                     3D PIV dataset of jet
 
 Interested viewers are encouraged to use the codes in airfoil_wake_PIV or jet_tomoPIV for application.
 The authors are happy to assist with debugging the code if the relevant data can be open-sourced here.
+
+Acknowledgements
+This project has received funding from the European Research Council (ERC) under the European Union’s Horizon 2020 research and innovation programme (grant agreement No 949085).
