@@ -20,8 +20,9 @@ Debian 12/MATLAB R2023b
 DATABASE
 
 RUNNING
+change the file path to suit your environment and run
 
-FILES
+FILES in GITHUB
 Grid_Wing.mat                                grid information of the PIV field
 P_calculation.m                              MATLAB script to compute the pressure field
 filter_AE.py                                 python code to process the PIV field using blind denoising autoencoder
@@ -32,3 +33,10 @@ log                                          a file logging the outputs of progr
 loop_error_run.m                             MATLAB script to inspect the error over AMIC iterations
 show_pressure.m                              MATLAB script to observe the pressure field
 show_velocity.m                              MATLAB script to observe the velocity field
+
+FILES IN ZENODO
+OUT_TRPIV/                                   PIV output
+Pressure.mat                                 saving pressure computation result
+V_SG.mat                                     saving velocity field after Savitzky-Golay filter
+V_POD.mat                                    saving velocity field after POD truncation
+V_AMIC.mat                                   saving velocity field after AMIC
