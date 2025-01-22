@@ -45,5 +45,8 @@ airfoilLES_parameters.h5                        file saving flow and data inform
 GWN/                                            folder of the data with Gaussian white noise
 CGWN/                                           folder of the data with convolution of Gaussian white noise
 
+ACKNOWLEDGEMENT
+We warmly acknowledge University of Michigan and Professor Towne, and wish the user of data on Zenodo cite their articles.
+
 REFERENCE
 A. Towne, S. Dawson, G. A. Brès, A. Lozano-Durán, T. Saxton-Fox, A. Parthasarthy, A. R. Jones, H. Biler, C.-A. Yeh, H. Patel, and K. Taira. A database for reduced-complexity modeling of fluid flows. AIAA Journal, 61:2867–2892, 2023.
