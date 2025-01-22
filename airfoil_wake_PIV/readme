@@ -20,6 +20,7 @@ Debian 12/MATLAB R2023b
 DATABASE
 
 RUNNING
+use h52mat to change the format of data
 change the file path to suit your environment and run
 
 FILES in GITHUB
