@@ -25,6 +25,7 @@ the original database is
 https://turbulence.idies.jhu.edu/home
 
 RUNNING
+convert format from h5 to mat using h52mat.m
 change the file path to suit your environment and run
 
 FILES IN GITHUB
@@ -43,10 +44,12 @@ in each folder there is:
     showvelocity.m                              MATLAB script to check the velocity processing result
 
 FILES IN ZENODO
+mat2h5.m                                        MATLAB script to convert the format from *.mat to *.h5
+h52mat.m                                        MATLAB script to convert the format from *.h5 to *.mat
 GWN/                                            folder of the data with Gaussian white noise
 CGWN/                                           folder of the data with convolution of Gaussian white noise
 in each folder there is:
-    Pressure.h5                                 saving pressure computation result
+    Pressure.mat                                saving pressure computation result
     V_NOISE.mat                                 saving velocity field superimposed with noise
     V_SG.mat                                    saving velocity field after Savitzky-Golay filter
     V_POD.mat                                   saving velocity field after POD truncation
