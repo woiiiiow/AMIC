@@ -40,11 +40,19 @@ in each folder there is:
     log              	                        a file logging the outputs of program
 
 FILES IN ZENODO
+mat2h5.m                                        MATLAB script to convert the format from *.mat to *.h5
+h52mat.m                                        MATLAB script to convert the format from *.h5 to *.mat
 airfoilLES_midspan/                             folder containing flow field data
 airfoilLES_gird.h5          	                file saving grid information
 airfoilLES_parameters.h5                        file saving flow and data information
 GWN/                                            folder of the data with Gaussian white noise
 CGWN/                                           folder of the data with convolution of Gaussian white noise
+in each folder of {GWN, CGWN} there is:
+    Pressure.mat                                saving pressure computation result
+    V_NOISE.mat                                 saving velocity field superimposed with noise
+    V_SG.mat                                    saving velocity field after Savitzky-Golay filter
+    V_POD.mat                                   saving velocity field after POD truncation
+    V_AMIC.mat                                  saving velocity field after AMIC
 
 ACKNOWLEDGEMENT
 We warmly acknowledge University of Michigan and Professor Towne, and wish the user of data on Zenodo cite their articles.
