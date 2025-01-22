@@ -1,1 +1,49 @@
+===========================================================================
+        Algorithm: Advection-based Multiframe Iterative Correction (AMIC)
+           Author: CHEN Junwei, Stefano DISCETTI, Marco RAIOLA
+       Laboratory: EAP of UC3M
+         Platform: MATLAB & PYTHON
+             Date: 20th January 2025
+          Version: 2.0.0
+          Contact: junwei.chen@uc3m.es
+===========================================================================
 
+DESCRIPTION
+The Advection-based Multiframe Iterative Correction (AMIC) is a space-time filter based on advection funtion to filter the (Particle Image Velocimetry) PIV fields. Here is an example on 3D synthetic dataset of channel flow at Re_\tau = 1000 from JHTDB (John Hopkins Turbulence Database).
+
+PLATFORM
+The codes are tested on:
+AMD Ryzen 9 5950X/128 GB DDR4
+Debian 12/MATLAB R2023b
+It takes 200 s for 10 loops for AMIC, and 80 s for pressure computation over 300 frames
+
+DATABASE
+
+
+the original database is 
+https://turbulence.idies.jhu.edu/home
+
+RUNNING
+change the file path to suit your environment and run
+
+FILES IN GITHUB
+airfoilLES_README.pdf                           copy of the readme of original database
+gaussian_white_noise/                           folder of the code with Gaussian white noise
+convolution_gaussian_white_noise/               folder of the code with convolution of Gaussian white noise
+in each folder there is:
+    Noisify.m                                   MATLAB script to superpose noise into velocity field
+    filter_SG.m                                 MATLAB script to filter the velocity field with Savitzky-Golay filter
+    filter_POD.m                                MATLAB script to perform POD (Proper Orthogonal Decomposition) truncation on velocity field
+    filter_AMIC.m                               MATLAB script to process the velocity field using AMIC
+    P_calculation.m                             MATLAB script to compute the pressure field
+    log              	                        a file logging the outputs of program
+
+FILES IN ZENODO
+airfoilLES_midspan/                             folder containing flow field data
+airfoilLES_gird.h5          	                file saving grid information
+airfoilLES_parameters.h5                        file saving flow and data information
+GWN/                                            folder of the data with Gaussian white noise
+CGWN/                                           folder of the data with convolution of Gaussian white noise
+
+REFERENCE
+A. Towne, S. Dawson, G. A. Brès, A. Lozano-Durán, T. Saxton-Fox, A. Parthasarthy, A. R. Jones, H. Biler, C.-A. Yeh, H. Patel, and K. Taira. A database for reduced-complexity modeling of fluid flows. AIAA Journal, 61:2867–2892, 2023.
