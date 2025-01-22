@@ -35,6 +35,8 @@ show_pressure.m                              MATLAB script to observe the pressu
 show_velocity.m                              MATLAB script to observe the velocity field
 
 FILES IN ZENODO
+mat2h5.m                                     MATLAB script to convert the format from *.mat to *.h5
+h52mat.m                                     MATLAB script to convert the format from *.h5 to *.mat
 OUT_TRPIV/                                   PIV output
 Pressure.mat                                 saving pressure computation result
 V_SG.mat                                     saving velocity field after Savitzky-Golay filter
