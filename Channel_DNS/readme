@@ -4,7 +4,7 @@
        Laboratory: EAP of UC3M
          Platform: MATLAB & PYTHON
              Date: 20th January 2025
-          Version: 2.0.0
+          Version: 2.1.0
      Repositories: https://github.com/woiiiiow/AMIC
           Contact: junwei.chen@uc3m.es
 ===========================================================================
@@ -17,6 +17,9 @@ The codes are tested on:
 AMD Ryzen 9 5950X/128 GB DDR4/NVIDIA GeForce RTX 4090
 Debian 12/MATLAB R2023b
 It takes 150 s over 8 loops for AMIC, and 600 s for pressure computation over 100 frames
+
+SITE OF CODES
+https://github.com/woiiiiow/AMIC
 
 DATABASE
 
@@ -57,6 +60,40 @@ in each folder of {GWN, CGWN} there is:
     V_POD.mat                                   saving velocity field after POD truncation
     V_AE.mat                                    saving velocity field after blind denoise autoencoder
     V_AMIC.mat                                  saving velocity field after AMIC
+
+STRUCTURE OF DATA FILES
+of field data in Fields_testing/ and Fields/:
+    Xst, Yst, Zst: scalar      ; the location of the field of view
+    t            : scalar      ; time of frame
+    xb, yb       : 1x88        ; baseline in x/y direction
+    zb           : 1x44        ; baseline in z   direction
+    u, v, w, p   : 88x88x44    ; velocity field components in x/y/z direction and pressure field (dimension sequence is XYZ)
+of Pressure.mat:
+    P_pod        : 92928x100  ; pressure field from POD truncation
+    P_sg         : 92928x100  ; pressure field from Savitzky-Golay filter
+    P_ref        : 92928x100  ; reference pressure field
+    P_noise      : 92928x100  ; pressure field from noisy field
+    P_amic       : 92928x100  ; pressure field from AMIC
+of V_NOISE.mat:
+    Enabled      : 92928x501  ; enabled velocity vectors
+    PhiU         : 278784x2400; POD spatial modes
+    SigmaU       : 2400x2400  ; POD singular value matrix
+    U_array      : 92928x501  ; velcity field in X-direction (Enabled part)
+    V_array      : 92928x501  ; velcity field in Y-direction (Enabled part)
+    W_array      : 92928x501  ; velcity field in Z-direction (Enabled part)
+    U_noise      : 92928x501  ; velcity field in X-direction (noisy)
+    V_noise      : 92928x501  ; velcity field in Y-direction (noisy)
+    W_noise      : 92928x501  ; velcity field in Z-direction (noisy)
+    U_ext        : 92928x1899 ; velcity field in X-direction (for POD)
+    V_ext        : 92928x1899 ; velcity field in Y-direction (for POD)
+    W_ext        : 92928x1899 ; velcity field in Z-direction (for POD)
+    Um           : 92928x1    ; mean velcity field in X-direction
+    Vm           : 92928x1    ; mean velcity field in Y-direction
+    Wm           : 92928x1    ; mean velcity field in Z-direction
+of V_SG.mat/V_POD.mat/V_AE.mat/V_AMIC.mat:
+    U, V, W      : 92928x120  ; processed velcity field in X/Y/Z-direction
+    xb, yb       : 1x88       ; baseline in x/y direction
+    zb           : 1x44       ; baseline in z   direction
 
 ACKNOWLEDGEMENT
 We warmly acknowledge John Hopkins Turbulent Database, and wish the user of data on Zenodo cite their articles.
