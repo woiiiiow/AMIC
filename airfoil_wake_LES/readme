@@ -4,7 +4,7 @@
        Laboratory: EAP of UC3M
          Platform: MATLAB
              Date: 20th January 2025
-          Version: 2.0.0
+          Version: 2.1.0
      Repositories: https://github.com/woiiiiow/AMIC
           Contact: junwei.chen@uc3m.es
 ===========================================================================
@@ -17,6 +17,9 @@ The codes are tested on:
 AMD Ryzen 9 5950X/128 GB DDR4
 Debian 12/MATLAB R2023b
 It takes 200 s for 10 loops for AMIC, and 80 s for pressure computation over 300 frames
+
+SITE OF CODES
+https://github.com/woiiiiow/AMIC
 
 DATABASE
 
@@ -53,6 +56,37 @@ in each folder of {GWN, CGWN} there is:
     V_SG.mat                                    saving velocity field after Savitzky-Golay filter
     V_POD.mat                                   saving velocity field after POD truncation
     V_AMIC.mat                                  saving velocity field after AMIC
+
+STRUCTURE OF DATA FILES
+of field data in airfoilLES_midspan/airfoilLES t#####.h5:
+    ux: x-component of velocity for mid-span slice at each (x, y) grid point
+    uy: y-component of velocity for mid-span slice at each (x, y) grid point
+    uz: z-component of velocity for mid-span slice at each (x, y) grid point
+of airfoilLES_gird.h5:
+    x: streamwise grid
+    xa: x-coordinate of points defining airfoil geometry
+    y: cross-stream grid
+    ya: y-coordinate of points defining airfoil geometry
+    w: volume associated with each grid point
+airfoilLES_parameters.h5:
+    Re: Reynolds number
+    dt: time step between snapshots
+of Pressure.mat:
+    AFrame_P        : 1x300    ; frame array to compute pressure field
+    P_POD           : 15251x300; pressure field from POD truncation
+    P_SG            : 15251x300; pressure field from Savitzky-Golay filter
+    P_REF           : 15251x300; reference pressure field
+    P_NOISY         : 15251x300; pressure field from noisy field
+    P_AMIC          : 15251x300; pressure field from AMIC
+of V_NOISE.mat:
+    AFrame          : 1x320    ; frame array of velocity field
+    U_clean, V_clean: 15251x320; X/Y components of velocity field (without noise)
+    U_noisy, V_noisy: 15251x320; X/Y components of velocity field (with    noise)
+    xb              : 1x151    ; baseline of X-coordinates
+    yb              : 1x101    ; baseline of Y-coordinates
+of V_SG.mat/V_POD.mat/V_AE.mat/V_AMIC.mat:
+    AFrame          : 1x320    ; frame array of velocity field
+    U, V            : 15251x320; X/Y components of velocity field (processed)
 
 ACKNOWLEDGEMENT
 We warmly acknowledge University of Michigan and Professor Towne, and wish the user of data on Zenodo cite their articles.
