@@ -4,7 +4,7 @@
        Laboratory: EAP of UC3M
          Platform: MATLAB & PYTHON
              Date: 20th January 2025
-          Version: 2.0.0
+          Version: 2.1.0
      Repositories: https://github.com/woiiiiow/AMIC
           Contact: junwei.chen@uc3m.es
 ===========================================================================
@@ -16,6 +16,9 @@ PLATFORM
 The codes are tested on:
 AMD Ryzen 9 5950X/128 GB DDR4/NVIDIA GeForce RTX 4090
 Debian 12/MATLAB R2023b
+
+SITE OF CODES
+https://github.com/woiiiiow/AMIC
 
 DATABASE
 
@@ -43,3 +46,23 @@ Pressure.mat                                 saving pressure computation result
 V_SG.mat                                     saving velocity field after Savitzky-Golay filter
 V_POD.mat                                    saving velocity field after POD truncation
 V_AMIC.mat                                   saving velocity field after AMIC
+
+STRUCTURE OF DATA FILES
+of files in OUT_TRPIV:
+    Fc              : 147x152  ; correlation value
+    Info            : 147x152  ; Info is equal to 0 in the case a(replacement methods based on averaging), 1 if the vector was not an outlier and 3/2 in the case b (correction with secondary peak in the correlation map)
+    SN              : 147x152  ; the signal-to-noise ratio.
+    U, V            : 147x152  ; Y/X-components of velocity field
+of Pressure.mat:
+    AFrame_P        : 1x240    ; frame array to compute pressure field
+    P_POD           : 7700x240 ; pressure field from POD truncation
+    P_SG            : 7700x240 ; pressure field from Savitzky-Golay filter
+    P_REF           : 7700x240 ; reference pressure field
+    P_NOISY         : 7700x240 ; pressure field from noisy field
+    P_AMIC          : 7700x240 ; pressure field from AMIC
+of V_SG.mat/V_POD.mat/V_AMIC.mat:
+    AFrame          : 1x520    ; frame array of velocity field
+    U, V            : 22344x520; X/Y components of velocity field (processed)
+of V_AE.mat:
+    AFrame          : 1x520    ; frame array of velocity field
+    U, V            : 7700x520 ; X/Y components of velocity field (processed)
