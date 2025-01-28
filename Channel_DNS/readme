@@ -4,7 +4,7 @@
        Laboratory: EAP of UC3M
          Platform: MATLAB & PYTHON
              Date: 20th January 2025
-          Version: 2.1.0
+          Version: 2.2.0
      Repositories: https://github.com/woiiiiow/AMIC
           Contact: junwei.chen@uc3m.es
 ===========================================================================
@@ -22,7 +22,7 @@ SITE OF CODES
 https://github.com/woiiiiow/AMIC
 
 DATABASE
-
+https://zenodo.org/records/14752830
 
 the original database is 
 https://turbulence.idies.jhu.edu/home
