@@ -16,20 +16,6 @@ AMIC is a temporal-spatial filter designed for time-resolved PIV (Particle Image
 corresponding paper in the link below
 https://www.sciencedirect.com/science/article/pii/S0894177725000019
 
-BibTeX
-@article{CHEN2025111407,
-title = {Advection-based multiframe iterative correction for pressure estimation from velocity fields},
-journal = {Experimental Thermal and Fluid Science},
-volume = {164},
-pages = {111407},
-year = {2025},
-issn = {0894-1777},
-doi = {https://doi.org/10.1016/j.expthermflusci.2025.111407},
-url = {https://www.sciencedirect.com/science/article/pii/S0894177725000019},
-author = {Junwei Chen and Marco Raiola and Stefano Discetti},
-keywords = {Particle image Velocimetry, Data assimilation, Pressure estimation, Noise reduction},
-}
-
 The database is in the link below
 https://zenodo.org/records/14752830
 
