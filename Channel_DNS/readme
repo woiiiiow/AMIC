@@ -33,6 +33,7 @@ change the file path to suit your environment and run
 
 FILES IN GITHUB
 airfoilLES_README.pdf                           copy of the readme of original database
+video_channel.mp4                               a sample video
 gaussian_white_noise/                           folder of the code with Gaussian white noise
 convolution_gaussian_white_noise/               folder of the code with convolution of Gaussian white noise
 in each folder there is:
